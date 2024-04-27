@@ -14,7 +14,11 @@
 			"extensions": [
 				"bradlc.vscode-tailwindcss",
 				"budparr.language-hugo-vscode",
-				"tamasfe.even-better-toml"
+				"tamasfe.even-better-toml",
+				"yzhang.markdown-all-in-one",
+				"dbaeumer.vscode-eslint",
+				"DavidAnson.vscode-markdownlint",
+				"stylelint.vscode-stylelint"
 			]
 		}
 	},
