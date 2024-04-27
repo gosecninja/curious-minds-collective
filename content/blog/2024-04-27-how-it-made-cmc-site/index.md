@@ -263,3 +263,9 @@ So, if you liked what I wrote, please:
 - DO NOT want to work with me! I have unrealistic ideas about working together: https://medium.com/@zoltantoma/how-much-should-i-charge-for-my-service-b2c8b380e66e
 
 And DO NOT! I repeat, DO NOT follow my work. It would only feed my own Ego while I am working on the #MentalInCyber topic and trying to convey the (cyber) security-first business model.
+
+## PS
+
+I almost forgot... the code is available on github. [https://github.com/gosecninja/curious-minds-collective](https://github.com/gosecninja/curious-minds-collective)
+
+(And I need to look into why the links aren't showing up properly in the post... a todo for next time)
