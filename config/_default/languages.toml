@@ -8,3 +8,13 @@
     footer = 'The theme brought to you by <a class="text-muted" href="https://gethyas.com/">Hyas</a>'
     # alertText = '<a class="alert-link stretched-link fw-normal" href="/blog/example-post/">Doks version 1.0 just shipped!</a>'
 
+[hu]
+  languageName = "Magyar"
+  contentDir = "content/hu"
+  weight = 20
+  [hu.params]
+    languageISO = "HU"
+    languageTag = "hu-HU"
+    footer = 'The theme brought to you by <a class="text-muted" href="https://gethyas.com/">Hyas</a>'
+    # alertText = '<a class="alert-link stretched-link fw-normal" href="/blog/example-post/">Doks version 1.0 just shipped!</a>'
+
