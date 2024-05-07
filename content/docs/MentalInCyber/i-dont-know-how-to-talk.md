@@ -95,7 +95,7 @@ Let's look at the first issue it brought up as a possible reason.
 
 That was a very good thought. There is no feedback in digital communication. In other words, not in the form that would be useful for us.
 
-I really like the scene from the movie Revolver, when the protagonist walks out of the clinic and begins a monologue before being hit by a car. It's around the 30 minute mark if you want to watch it.
+I really like the scene from the movie Revolver, when the protagonist walks out of the clinic and begins a monologue before being hit by a car. It's around the 55 minutes mark if you want to watch it.
 
 "We have a common passion. We are all addicted to recognition."
 
