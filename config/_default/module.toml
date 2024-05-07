@@ -30,15 +30,15 @@
   target = "assets"
 
 ## content
-[[mounts]]
-  source = "content/en"
-  target = "content"
-  lang = "en"
+#[[mounts]]
+#  source = "content/en"
+#  target = "content"
+#  lang = "en"
 
-[[mounts]]
-  source = "content/hu"
-  target = "content"
-  lang = "hu"
+#[[mounts]]
+#  source = "content/hu"
+#  target = "content"
+#  lang = "hu"
 
 ## data
 [[mounts]]
