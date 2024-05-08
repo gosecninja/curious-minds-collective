@@ -33,6 +33,7 @@
   {{- else -}}
     {{- warnf "Original JS file not found at %s" $flexsearchDefaultPath -}}
   {{- end -}}
+  {{- $flexsearchLangConfigPath := $flexsearchDefaultPath -}}
 
   {{- /* Call partials to load the JS files */ -}}
   {{ partial "footer/esbuild-template" (dict "src" $flexsearchLangConfigPath "load" "async" "transpile" false "isMultilingual" site.IsMultiLingual "searchLimit" $searchLimit) -}}
