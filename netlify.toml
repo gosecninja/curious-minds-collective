@@ -48,5 +48,3 @@
     max-age=31536000'''
     Access-Control-Allow-Origin = "*"
 
-[[plugins]]
-package = "@netlify/plugin-artifacts"
