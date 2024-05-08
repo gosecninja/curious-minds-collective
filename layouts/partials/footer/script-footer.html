@@ -11,31 +11,14 @@
 {{ $showFlexSearch := .Scratch.Get "showFlexSearch" -}}
 {{ $searchLimit := site.Params.doks.searchLimit -}}
 {{ if $showFlexSearch -}}
-  {- /* Initialize variables */ -}}
-  {{- $flexsearchDefaultPath := "js/flexsearch.js" -}}
-  {{- $flexsearchLangConfigPath := $flexsearchDefaultPath -}}
-
-  {{- /* Set the path for language-specific JS file if the site is multilingual */ -}}
+  {{- /* use lang-specific FlexSearch JS config file for multilingual site */ -}}
+  {{- $flexsearchLangConfigPath := "js/flexsearch.js" -}}
   {{- if site.LanguagePrefix -}}
     {{- $flexsearchLangConfigPath = printf "js/flexsearch.%s.js" site.Language.Lang -}}
   {{- end -}}
-
-  {{- /* Find the original JS file and attempt to copy it if necessary */ -}}
-  {{- $flexSearchResource := resources.Get $flexsearchDefaultPath -}}
-  {{- if $flexSearchResource -}}
-    {{- if ne $flexsearchLangConfigPath $flexsearchDefaultPath -}}
-      {{- /* Only copy if the language path is different from the default */ -}}
-      {{- $unusedVar := $flexSearchResource | resources.Copy $flexsearchLangConfigPath -}}
-      {{- $flexsearchLangConfigPath := $unusedVar.RelPermalink -}}
-      {{- if not $unusedVar -}}
-        {{- warnf "Failed to copy resource from %s to %s" $flexsearchDefaultPath $flexsearchLangConfigPath -}}
-      {{- end -}}
-    {{- end -}}
-  {{- else -}}
-    {{- warnf "Original JS file not found at %s" $flexsearchDefaultPath -}}
-  {{- end -}}
-  {{- warnf "Flex JS file at %s" $flexsearchLangConfigPath -}}
-  {{- /* Call partials to load the JS files */ -}}
+  {{- $dict := dict "src" $flexsearchLangConfigPath "load" "async" "transpile" false "isMultilingual" site.IsMultiLingual "searchLimit" $searchLimit -}}
+{{- $dictStr := printf "src: %s, load: %s, transpile: %t, isMultilingual: %t, searchLimit: %d" $dict.src $dict.load $dict.transpile $dict.isMultilingual $dict.searchLimit -}}
+{{- warnf "Dictionary contents: %s" $dictStr -}}
   {{ partial "footer/esbuild-template" (dict "src" $flexsearchLangConfigPath "load" "async" "transpile" false "isMultilingual" site.IsMultiLingual "searchLimit" $searchLimit) -}}
   {{ partial "footer/esbuild" (dict "src" "js/search-modal.js" "load" "async" "transpile" false) -}}
 {{ end -}}
