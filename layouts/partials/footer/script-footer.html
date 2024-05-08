@@ -26,7 +26,7 @@
     {{- if ne $flexsearchLangConfigPath $flexsearchDefaultPath -}}
       {{- /* Only copy if the language path is different from the default */ -}}
       {{- $unusedVar := $flexSearchResource | resources.Copy $flexsearchLangConfigPath -}}
-      {{- $flexsearchLangConfigPath := $unusedVar.Permalink -}}
+      {{- $flexsearchLangConfigPath := $unusedVar.RelPermalink -}}
       {{- if not $unusedVar -}}
         {{- warnf "Failed to copy resource from %s to %s" $flexsearchDefaultPath $flexsearchLangConfigPath -}}
       {{- end -}}
