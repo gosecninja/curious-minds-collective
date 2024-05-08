@@ -11,10 +11,30 @@
 {{ $showFlexSearch := .Scratch.Get "showFlexSearch" -}}
 {{ $searchLimit := site.Params.doks.searchLimit -}}
 {{ if $showFlexSearch -}}
-  {{- /* use lang-specific FlexSearch JS config file for multilingual site */ -}}
-  {{- $flexsearchLangConfigPath := "" -}}
-    {{- $flexsearchLangConfigPath = "js/flexsearch.js" -}}
+  {- /* Initialize variables */ -}}
+  {{- $flexsearchDefaultPath := "js/flexsearch.js" -}}
+  {{- $flexsearchLangConfigPath := $flexsearchDefaultPath -}}
 
+  {{- /* Set the path for language-specific JS file if the site is multilingual */ -}}
+  {{- if site.LanguagePrefix -}}
+    {{- $flexsearchLangConfigPath = printf "js/flexsearch.%s.js" site.Language.Lang -}}
+  {{- end -}}
+
+  {{- /* Find the original JS file and attempt to copy it if necessary */ -}}
+  {{- $flexSearchResource := resources.Get $flexsearchDefaultPath -}}
+  {{- if $flexSearchResource -}}
+    {{- if ne $flexsearchLangConfigPath $flexsearchDefaultPath -}}
+      {{- /* Only copy if the language path is different from the default */ -}}
+      {{- $unusedVar := $flexSearchResource | resources.Copy $flexsearchLangConfigPath -}}
+      {{- if not $unusedVar -}}
+        {{- warnf "Failed to copy resource from %s to %s" $flexsearchDefaultPath $flexsearchLangConfigPath -}}
+      {{- end -}}
+    {{- end -}}
+  {{- else -}}
+    {{- warnf "Original JS file not found at %s" $flexsearchDefaultPath -}}
+  {{- end -}}
+
+  {{- /* Call partials to load the JS files */ -}}
   {{ partial "footer/esbuild-template" (dict "src" $flexsearchLangConfigPath "load" "async" "transpile" false "isMultilingual" site.IsMultiLingual "searchLimit" $searchLimit) -}}
   {{ partial "footer/esbuild" (dict "src" "js/search-modal.js" "load" "async" "transpile" false) -}}
 {{ end -}}
