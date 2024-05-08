@@ -26,6 +26,7 @@
     {{- if ne $flexsearchLangConfigPath $flexsearchDefaultPath -}}
       {{- /* Only copy if the language path is different from the default */ -}}
       {{- $unusedVar := $flexSearchResource | resources.Copy $flexsearchLangConfigPath -}}
+
       {{- if not $unusedVar -}}
         {{- warnf "Failed to copy resource from %s to %s" $flexsearchDefaultPath $flexsearchLangConfigPath -}}
       {{- end -}}
@@ -33,8 +34,7 @@
   {{- else -}}
     {{- warnf "Original JS file not found at %s" $flexsearchDefaultPath -}}
   {{- end -}}
-  {{- $flexsearchLangConfigPath := $flexsearchDefaultPath -}}
-
+  {{- warnf "Flex JS file at %s" $flexsearchLangConfigPath -}}
   {{- /* Call partials to load the JS files */ -}}
   {{ partial "footer/esbuild-template" (dict "src" $flexsearchLangConfigPath "load" "async" "transpile" false "isMultilingual" site.IsMultiLingual "searchLimit" $searchLimit) -}}
   {{ partial "footer/esbuild" (dict "src" "js/search-modal.js" "load" "async" "transpile" false) -}}
