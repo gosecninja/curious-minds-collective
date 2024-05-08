@@ -2,8 +2,8 @@
 title: "I don't know how to talk"
 description: "What may cause lagging in my speech"
 summary: ""
-date: 2023-09-07T16:04:48+02:00
-lastmod: 2023-09-07T16:04:48+02:00
+date: 2024-05-06
+#lastmod: 2024-05-06
 draft: false
 weight: 110
 toc: true
