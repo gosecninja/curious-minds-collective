@@ -28,7 +28,7 @@ It's Saturday afternoon, and I've sat down in front of my computer. I'm consider
 
 Yesterday, I launched the new site for GoSecNinja and updated a few DNS settings. The result:
 
-![](20240427152246.png)
+![](cover_20240427152246.png)
 
 > Source: [https://gosecninja.com](https://gosecninja.com) (Yes, this is where the ad goes :D)
 

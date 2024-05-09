@@ -17,6 +17,7 @@ tags: [
 contributors: [Zoltan Toma]
 pinned: false
 homepage: false
+images: [20240507181957.png]
 seo:
   title: "" # custom title (optional)
   description: "" # custom description (recommended)
@@ -53,7 +54,7 @@ De talán találtam rá egy működő megoldást, amit most szeretnék veletek m
 
 Mi az első dolgunk, mint fejlesztő? Persze, hogy olvassuk a dokumentációt. Én a Doks témát választottam a Hyas-től. És milyen jó, hogy van dokumentációs oldaluk és van róla bejegyzés, hogyan lehet beállítani a több nyelvűséget. Meg is mutatom nektek.
 
-![](20240507182223.png)
+![](cover_20240507182223.png)
 
 Őőőm... ez nem túl nagy segítség. Todo írni neki, erről a postról. (Persze finomabban, és több hasznos lépéssel.)
 
