@@ -25,6 +25,16 @@
   <div class="col-md-12 col-lg-9">
     {{ with .Params.summary -}}<p class="lead">{{ . }}</p>{{ end -}}
     {{ .Content }}
+    <div class="page-footer-meta d-flex flex-column flex-md-row justify-content-between">
+      {{ if site.Params.doks.lastMod -}}
+        {{ partial "main/last-modified.html" . }}
+      {{ end -}}
+      {{ if site.Params.doks.editPage -}}
+        {{ partial "main/edit-page.html" . }}
+      {{ end -}}
+    </div>
+    <!-- support-->
+    {{ partial "sponsor.html" (dict "Context" . "Class" "share-icons") }}
     <!-- social share -->
     {{ partial "social-share.html" (dict "Context" . "Class" "share-icons" "Whatsapp" false "Telegram" false "Pinterest" false "Tumblr" false "Vk" false) }}
     {{ if .Params.tags -}}

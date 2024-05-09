@@ -111,3 +111,17 @@
     background-color: #4b97d1;
   }
 }
+
+@include color-mode(dark) {
+  .sponsor-link {
+    //color: $body-color-dark;
+    //fill: $body-color;
+    fill: white;
+  }
+}
+
+.sponsor-link {
+  //color: $body-color;
+  //fill: $body-color-dark;
+  fill: black;
+}

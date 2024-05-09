@@ -48,6 +48,8 @@
 					{{ partial "main/edit-page.html" . }}
 				{{ end -}}
 			</div>
+			<!-- support-->
+			{{ partial "sponsor.html" (dict "Context" . "Class" "share-icons") }}
 			<!-- social share -->
 			{{ partial "social-share.html" (dict "Context" . "Class" "share-icons" "Whatsapp" false "Telegram" false "Pinterest" false "Tumblr" false "Vk" false) }}
 
