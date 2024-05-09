@@ -26,7 +26,7 @@
     {{ with .Params.summary -}}<p class="lead">{{ . }}</p>{{ end -}}
     {{ .Content }}
     <!-- social share -->
-    {{ partial "social-share.html" (dict "Context" . "Class" "share-icons" "Title" (i18n "share" ) "Whatsapp" false "Telegram" false "Pinterest" false "Tumblr" false "Vk" false) }}
+    {{ partial "social-share.html" (dict "Context" . "Class" "share-icons" "Whatsapp" false "Telegram" false "Pinterest" false "Tumblr" false "Vk" false) }}
     {{ if .Params.tags -}}
     <div class="tag-list-single">
       {{ range $index, $tag := .Params.tags -}}
