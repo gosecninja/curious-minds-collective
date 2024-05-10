@@ -14,6 +14,6 @@ seo:
   noindex: false # false (default) or true
 ---
 
-For now I do not collect anything on the site. Third party cookies may be present... But I'll do my best to hunt them down. :)
+Egyelőre nem gyűjtök semmilyen információt az oldal használatáról.
 
-Ez magyar lenne...
+Lásd: [Nincs süti?](/hu/docs/site/cookie/)

@@ -58,3 +58,6 @@ other = "Share"
 
 [sponsor]
 other = "Support us"
+
+[no_cookie_policy]
+other = "No Cookies?"

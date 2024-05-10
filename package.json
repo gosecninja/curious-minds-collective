@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "create": "hugo new",
-    "dev": "hugo server --disableFastRender --noHTTPCache",
+    "dev": "hugo server --debug --disableFastRender --noHTTPCache",
     "format": "prettier **/** -w -c",
     "build": "hugo --debug --minify --gc",
     "preview": "vite preview --outDir public"
