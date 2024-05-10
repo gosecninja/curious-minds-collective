@@ -34,7 +34,21 @@
 				{{ partial "sidebar/docs-toc-mobile.html" . }}
 			</nav>
 			{{ end -}}
-
+			{{ if site.Params.doks.imageSingle -}}
+				{{- $images := .Resources.ByType "image" -}}
+				{{- $featured := $images.GetMatch "*feature*" -}}
+				{{- if not $featured }}{{ $featured = $images.GetMatch "{*cover*,*thumbnail*}" }}{{ end -}}
+				{{- if $featured -}}
+					<div class="col-md-13">
+						{{ partial "picture" (dict
+						"page" .
+						"src" $featured
+						"alt" .Title
+						"class" "img-post-single rounded-0"
+						)}}
+					</div>
+				{{ end -}}
+			{{ end -}}
 			{{ if site.Params.doks.headlineHash -}}
 				{{ partial "main/headline-hash" .Content }}
 			{{ else -}}

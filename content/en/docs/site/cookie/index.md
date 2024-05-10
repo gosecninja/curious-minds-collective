@@ -16,9 +16,6 @@ seo:
 
 You may have noticed that there are no annoying accept cookies pop-ups. This is because in addition that they annoying me a lot, they also cause bad security hygiene.
 
-![](no_cookies.webp)
-
-
 That's why I'm trying to develop the site so that it doesn't use any cookies. If some gets through, I'll try to eliminate them as soon as possible. There are other techniques for checking site statistics that do not affect our GDPR compliance.
 
 [Relationsec](https://relationsec.net/no-cookies/) was the inspiration for this kind of No Cookies policy. Thanks *Klaus*.
