@@ -32,13 +32,13 @@
 
 # Redirects and rewrites — https://docs.netlify.com/routing/redirects/#syntax-for-the-netlify-configuration-file
 [[redirects]]
-from = '/hu/**'
+from = '/hu/*'
 to = '/hu/404.html'
 status = 404
 
 # Default language must be last.
 [[redirects]]
-from = '/**'
+from = '/*'
 to = '/en/404.html'
 status = 404
 
