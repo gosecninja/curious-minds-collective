@@ -31,6 +31,16 @@
   autoLaunch = false
 
 # Redirects and rewrites — https://docs.netlify.com/routing/redirects/#syntax-for-the-netlify-configuration-file
+[[redirects]]
+from = '/hu/**'
+to = '/hu/404.html'
+status = 404
+
+# Default language must be last.
+[[redirects]]
+from = '/**'
+to = '/en/404.html'
+status = 404
 
 # Custom headers — https://docs.netlify.com/routing/headers/#syntax-for-the-netlify-configuration-file
 [[headers]]
