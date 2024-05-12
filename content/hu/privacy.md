@@ -17,3 +17,12 @@ seo:
 Egyelőre nem gyűjtök semmilyen információt az oldal használatáról.
 
 Lásd: [Nincs süti?](/hu/docs/site/cookie/)
+
+# Weboldal látogatóinak
+
+- Nem gyűjtünk személyes adatokat.
+- A böngésző nem tárol információt.
+- Semmilyen információt nem osztunk, küldünk el, vagy adunk el meg harmadik feleknek.
+- A reklámcégekkel nem osztunk meg információkat.
+- Nem bányászunk és gyűjtünk be személyes és viselkedési trendekre vonatkozó információkat.
+- Semmilyen személyes információ nem monetizálunk.
