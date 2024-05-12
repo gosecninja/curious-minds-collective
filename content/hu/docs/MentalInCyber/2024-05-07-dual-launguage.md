@@ -25,7 +25,7 @@ Ide kell majd egy diagramot készítenem, az observability pattern folytatásár
 
 Mi okozhatja, hogy az ötletből nem lesz valóság? Az információ egy lassú tudásbázisban van. Az agyunkban. Ha ezt szeretnénk közölni, ezt valahogy ki kell belőle nyerni. De az információt át kell fogalmazni, hogy megfeleljen egy kommunikációs protokollnak. Ennek is van egy költsége. Viszont nem egy átalakításon és szűrűn megy keresztül az információ, hanem számtalanon. És még csak ki sem nyitottuk a szánkat.
 
-Ezek közül bármelyiknek lehet akkora költsége, hogy túl fárasztó lenne át verni rajta egy információt. Vagy egyszerűen blokkolja az információ megosztását. Ezt a koncepciót informatikában proxynak nevezzük. De Te lehet úgy ismered ebben a helyzetben, hogy komfortzóna, delegáció, vagy bármi más, ami hasonló feladatott lát el.
+Ezek közül bármelyiknek lehet akkora költsége, hogy túl fárasztó lenne át tuszkolni rajta egy információt. Vagy egyszerűen blokkolja az információ megosztását. Ezt a koncepciót informatikában proxynak nevezzük. De Te lehet úgy ismered ebben a helyzetben, hogy komfortzóna, delegáció, vagy bármi más, ami hasonló feladatott lát el.
 
 Viszont azt feltételezzük, hogy ez egy darab kis szűrő. A valóság az, hogy számtalan kis szűrő egymás után. Ami egy úgynevezett proxy chain-t (proxy lánc) hozz létre. És mindegyiken át kell mennie az információnak, hogy ebből kimenet legyen.
 
