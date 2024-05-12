@@ -20,4 +20,4 @@ Ezért igyekszem úgy fejleszteni az oldalt, hogy ne használjon semmilyen cooki
 
 Az inspirációt az ilyes fajta ki Nincs süti hirdetéshez a [Relationsec](https://relationsec.net/no-cookies/) adta. Kösz *Klaus*.
 
-(Bár eleve így terveztem létre hozni ezt az oldalt.)
+(Bár eleve így terveztem létrehozni ezt az oldalt.)
