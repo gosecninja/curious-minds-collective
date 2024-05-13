@@ -98,6 +98,11 @@ weight = 50
   url = "/en/privacy/"
   weight = 10
 
+[[footer]]
+name = "Creative Commons license"
+url = "/en/about/#copyright-and-attributions"
+weight = 15
+
 # [[footer]]
 #   name = "Terms of Service"
 #   url = "/terms/"

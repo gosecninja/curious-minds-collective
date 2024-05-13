@@ -97,6 +97,12 @@ weight = 50
   url = "/hu/privacy/"
   weight = 10
 
+[[footer]]
+name = "Creative Commons license"
+url = "/hu/about/#copyright-and-attributions"
+weight = 15
+
+
 # [[footer]]
 #   name = "Terms of Service"
 #   url = "/terms/"

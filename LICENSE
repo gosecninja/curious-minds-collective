@@ -1,3 +1,43 @@
+Different parts of this repository are covered by different licenses.
+
+## Curious Minds Collective
+
+Copyright (C) 2024 Zoltan Toma, Curious Minds Collective, GoSecNinja OÜ
+
+This content parts is created by Zoltan Toma and Contributors under Curious Minds Collective project, supported by GoSecNinja OÜ. This work is published under the Creative Commons Attribution 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by/4.0/
+These include everything in the directory `content`, as well as the HTML pages generated from the original Markdown files in that directory.
+
+Official website of the project: https://thecuriousmindscollective.com/
+Official website of the company: https://gosecninja.com
+
+Contributions to this book, either as PRs or as issues, are made under public domain (CCO) or attribution licenses (CC-BY).
+
+## License for site code snippets
+
+MIT License
+
+Copyright (c) 2024 Zoltan Toma, Curious Minds Collective, GoSecNinja OÜ
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+## Doks engine
+
 MIT License
 
 Copyright (c) 2020-2024 Hyas
